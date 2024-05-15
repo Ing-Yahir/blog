@@ -1,0 +1,260 @@
+/* Estilos generales */
+body {
+    background-color: #1d1d1d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+     background-color: rgba(255, 255, 255, 0.8); 
+      text-align: center;
+     padding: 15px;
+     text-shadow: 2px 2px 4px rgba(207, 100, 0, 0.945);
+     margin: 25px auto; 
+    width: fit-content; 
+
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #085ec7;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.5s ease; 
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#titulo {
+    color: #c2c2c2;
+    margin: 10px 0;
+    font-size: 30px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(207, 100, 0, 0.945); 
+    transition: color 0s ease; 
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #085ec7;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    background-color: #dd5d07;
+    border-radius: 20px;
+}
+
+/* Estilos para el menú desplegable */
+.menu-toggle {
+    display: none;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    #titulo {
+        font-size: 24px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav.active a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #085ec7;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+/* Estilo base para todas las secciones */
+section {
+    border: 3px solid rgb(195, 218, 221);
+    margin: 10px; 
+    display: inline-block; 
+    width: calc(30% - 20px); 
+    vertical-align: top; 
+    padding: 20px; 
+}
+
+/* Estilo para las secciones de fondo gris */
+#seccion1, #seccion2, #seccion3 {
+    background-color: white;
+}
+
+/* Estilo para el contenido dentro de las secciones */
+section h2 {
+    font-size: 1.5em; 
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1em; 
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+
+/* Estilo para las imágenes dentro de las secciones */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para la primera, segunda y tercera sección */
+section:nth-child(-n+3) {
+    border-color: black; 
+    width: calc(50% - 20px); 
+}
+
+/* Estilos para la sección de contacto 
+#contacto {
+    background-color: #f2f2f2; 
+    text-align: center; 
+    width: 25%; 
+    padding: 1px 20px; 
+    box-sizing: border-box; 
+    border-top: 1px solid #ccc;
+    border-bottom: 2px solid #ccc; 
+}
+
+#contacto h2 {
+    color: #333; 
+    font-size: 28px; 
+    margin-bottom: 1px; 
+}
+
+#contacto p {
+    color: #666; 
+    font-size: 10px;
+    margin-bottom: 30px;
+}
+
+#contacto ul li {
+    margin-bottom: 5px; 
+}
+
+#contacto ul li a {
+    color: #007bff; 
+    text-decoration: none; 
+    font-size: 20px;
+    transition: color 0.0s; 
+}
+
+#contacto ul li a:hover {
+    color: #0056b3; 
+}
+
+*/
+
+
+/* Estilo para la sección de contacto */
+#contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1500px; /* Establece un ancho máximo para la sección */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+}
+
+/* Estilo para el título */
+#contacto h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el párrafo introductorio */
+#contacto p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la lista de información de contacto */
+#contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para cada ítem de la lista */
+#contacto ul li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los enlaces */
+#contacto ul li a {
+    text-decoration: none;
+    color: #007bff; /* Color azul para los enlaces */
+}
+
+/* Estilo para los enlaces al ser hover */
+#contacto ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para hacer responsive */
+@media (max-width: 1200px) {
+    #contacto {
+        padding: 10px;
+    }
+    #contacto h2 {
+        font-size: 20px;
+    }
+}
